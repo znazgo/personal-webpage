@@ -4,6 +4,7 @@
   margin: 0;
 }
 
+
 .title {
   position: absolute;
   left: 50%;
@@ -11,9 +12,9 @@
   transform: translate(-50%, -50%);
   min-width: 250px;
   max-width: 25%;
-  background: #7EA8BE;
+  background: #b34248; 
   opacity: 0.95;
-  border-radius: 7px;
+  border-radius: 10px;
   padding: 10px;
   text-align: center;
 }
@@ -22,7 +23,7 @@
   padding: 0px 60px;
   text-align: center;
   border-radius: 7px;
-  color: #4B666B;
+  color: #F0F8FF;
 }
 
 .title button {
@@ -30,6 +31,18 @@
   margin: 5px;
   font-size: 21px;
   color: #FCFAF9;
+  background: #4B666B;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.resume button{
+  padding: 10px;
+  margin: 5px;
+  font-size: 21px;
+  color: #FCFAF9;
+  
   background: #4B666B;
   border: 0;
   border-radius: 7px;

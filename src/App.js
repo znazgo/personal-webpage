@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import Sky from './components/sky/sky';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { dog } from '@fortawesome/free-solid-svg-icons'
+
+
+
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mode: 'space',
+      mode: 'school',
       background: '#2F3939',
-      how: 100,
+      how: 150,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -41,127 +46,55 @@ class App extends Component {
       404: {
         0: 'https://svgshare.com/i/9T5.svg',
       },
-      animals: {
-        0: 'https://image.flaticon.com/icons/svg/1198/1198051.svg',
-        1: 'https://image.flaticon.com/icons/svg/1198/1198052.svg',
-        2: 'https://image.flaticon.com/icons/svg/1198/1198053.svg',
-        3: 'https://image.flaticon.com/icons/svg/1198/1198053.svg',
-        4: 'https://image.flaticon.com/icons/svg/1198/1198056.svg',
-        5: 'https://image.flaticon.com/icons/svg/1198/1198057.svg',
-        6: 'https://image.flaticon.com/icons/svg/1198/1198059.svg',
-        7: 'https://image.flaticon.com/icons/svg/1198/1198060.svg',
-        8: 'https://image.flaticon.com/icons/svg/1198/1198062.svg',
-        9: 'https://image.flaticon.com/icons/svg/1198/1198063.svg',
-        10: 'https://image.flaticon.com/icons/svg/1198/1198065.svg',
-        11: 'https://image.flaticon.com/icons/svg/1198/1198053.svg',
-        12: 'https://image.flaticon.com/icons/svg/1198/1198068.svg',
-        13: 'https://image.flaticon.com/icons/svg/1198/1198069.svg',
-        14: 'https://image.flaticon.com/icons/svg/1198/1198070.svg',
-        15: 'https://image.flaticon.com/icons/svg/1198/1198073.svg',
-        16: 'https://image.flaticon.com/icons/svg/1198/1198075.svg',
-        17: 'https://image.flaticon.com/icons/svg/1198/1198076.svg',
-        18: 'https://image.flaticon.com/icons/svg/1198/1198079.svg',
-      },
-      gif: {
-        0: 'http://static.vibe.com/uploads/2013/08/VIBE-Vixen-Michael-Jackson-Gif21.gif',
-        1: 'https://media.giphy.com/media/otnqsqqzmsw7K/giphy.gif',
-        2: 'https://33.media.tumblr.com/ef95f99ce3222e912037af845e52ed6b/tumblr_nhcohan9qL1u2jwbho1_400.gif',
-        3: 'https://media.giphy.com/media/TSn2zVInxOm2c/giphy.gif',
-        4: 'http://www.reactiongifs.com/r/gj1.gif',
-        5: 'https://media2.giphy.com/media/HjPbLbmep2aJO/200.gif',
-        6: 'http://i.imgur.com/CsEGVc8.gif',
-        7: 'https://media.giphy.com/media/iPTTjEt19igne/giphy.gif',
-        8: 'http://www.reactiongifs.com/wp-content/uploads/2013/04/tip-hat.gif',
-        9: 'http://0.media.collegehumor.cvcdn.com/82/38/32771b4d97dd7d087187ec99e4f443e1-tina-fey-self-five.gif',
-        10: 'https://media0.giphy.com/media/vnnoqBjIrJ73y/200.gif',
-      },
-      403: {
-        0: 'https://image.flaticon.com/icons/svg/1244/1244031.svg',
-      },
-      500: {
-        0: 'https://image.flaticon.com/icons/svg/155/155275.svg',
-      },
-      503: {
-        0: 'https://image.flaticon.com/icons/svg/1234/1234292.svg',
-      },
-      food: {
-        0: 'https://image.flaticon.com/icons/svg/135/135728.svg',
-        1: 'https://image.flaticon.com/icons/svg/135/135687.svg',
-        2: 'https://image.flaticon.com/icons/svg/135/135715.svg',
-        3: 'https://image.flaticon.com/icons/svg/135/135628.svg',
-        4: 'https://image.flaticon.com/icons/svg/135/135591.svg',
-        5: 'https://image.flaticon.com/icons/svg/135/135702.svg',
-        6: 'https://image.flaticon.com/icons/svg/135/135644.svg',
-        7: 'https://image.flaticon.com/icons/svg/135/135629.svg',
-        8: 'https://image.flaticon.com/icons/svg/135/135630.svg',
+      school: {
+        0: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Wisconsin_Badgers_logo.svg',
+        1: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/BuckyBadger.svg/1200px-BuckyBadger.svg.png'
       },
       tech: {
-        0: 'https://image.flaticon.com/icons/svg/141/141073.svg',
-        1: 'https://image.flaticon.com/icons/svg/141/141070.svg',
-        2: 'https://image.flaticon.com/icons/svg/141/141009.svg',
-        3: 'https://image.flaticon.com/icons/svg/140/140993.svg',
-        4: 'https://image.flaticon.com/icons/svg/141/141106.svg',
-        5: 'https://image.flaticon.com/icons/svg/141/141015.svg',
-        6: 'https://image.flaticon.com/icons/svg/141/141099.svg',
-        7: 'https://image.flaticon.com/icons/svg/141/141008.svg',
-        8: 'https://image.flaticon.com/icons/svg/141/141036.svg',
+        0: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png',
+        1: 'https://www.flaticon.com/svg/vstatic/svg/873/873117.svg?token=exp=1615692126~hmac=dd58304db9338fdc4f128960a14ffb46',
+        2: 'https://www.flaticon.com/svg/vstatic/svg/919/919825.svg?token=exp=1615692197~hmac=a7b765917077f32fe667c4a78e964251',
+        3: 'https://symbols.getvecta.com/stencil_97/43_tensorflow-icon.f7092db2bd.svg',
+        4: 'https://pytorch.org/assets/images/pytorch-logo.png'
+
       },
-      autumn: {
-        0: 'https://image.flaticon.com/icons/svg/1230/1230864.svg',
-        1: 'https://image.flaticon.com/icons/svg/1230/1230865.svg',
-        2: 'https://image.flaticon.com/icons/svg/1230/1230867.svg',
-        3: 'https://image.flaticon.com/icons/svg/1230/1230868.svg',
-        4: 'https://image.flaticon.com/icons/svg/1230/1230869.svg',
-        5: 'https://image.flaticon.com/icons/svg/1230/1230871.svg',
-        6: 'https://image.flaticon.com/icons/svg/1230/1230882.svg',
-        7: 'https://image.flaticon.com/icons/svg/1230/1230875.svg',
-      },
-      social: {
-        0: 'https://image.flaticon.com/icons/svg/174/174855.svg',
-        1: 'https://image.flaticon.com/icons/svg/174/174848.svg',
-        2: 'https://image.flaticon.com/icons/svg/174/174883.svg',
-        3: 'https://image.flaticon.com/icons/svg/174/174879.svg',
-        4: 'https://image.flaticon.com/icons/svg/174/174857.svg',
-        5: 'https://image.flaticon.com/icons/svg/174/174870.svg',
-        6: 'https://image.flaticon.com/icons/svg/174/174869.svg',
-        7: 'https://image.flaticon.com/icons/svg/174/174872.svg',
-        8: 'https://image.flaticon.com/icons/svg/174/174875.svg',
-        9: 'https://image.flaticon.com/icons/svg/174/174845.svg',
-        10: 'https://image.flaticon.com/icons/svg/174/174837.svg',
-        11: 'https://image.flaticon.com/icons/svg/174/174858.svg',
-        12: 'https://image.flaticon.com/icons/svg/174/174844.svg',
-        13: 'https://image.flaticon.com/icons/svg/174/174865.svg',
-        14: 'https://image.flaticon.com/icons/svg/174/174874.svg',
-      },
-      react: {
-        0: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png',
+
+      languages: {
+        0: 'https://www.flaticon.com/svg/vstatic/svg/888/888859.svg?token=exp=1615691951~hmac=1bb6b263c9407c6de12d2bbf61d944b9',
+        1: 'https://www.flaticon.com/svg/vstatic/svg/226/226777.svg?token=exp=1615690532~hmac=1c152629056c7e5e75e1cb8bc5e57b96',
+        2: 'https://www.flaticon.com/svg/vstatic/svg/1822/1822899.svg?token=exp=1615690980~hmac=3350cacc45e19a6dfb08df7f9e7b34de',
+        3: 'https://www.flaticon.com/svg/vstatic/svg/919/919828.svg?token=exp=1615691093~hmac=23c99f4f66b78c030164a1f99ef0f707',
+        4: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'
       }
     }
     return (
       <div className="App">
         <div className="title">
-          <div className="git">
-            <h1>Sky</h1>
-            <a className="github-button" href="https://github.com/lucagez/sky" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star lucagez/sky on GitHub">Star</a>
+          <h1>Zach Nasgowitz</h1>
+
+          <div className="resume">
+            <button >
+            <FontAwesomeIcon icon="coffee"  />
+            
+
+              <a style= {{textDecoration:'none', color: 'white'}} href="https://drive.google.com/file/d/137hOLVNOgLP3Ts13lZFWboXt2BTwM9Jd/view?usp=sharing" download="Zach Nasgowitz|Resume.pdf">
+                Download Resume
+            </a>
+            </button>
           </div>
-          <button how={35} background={'#2F3939'} value={'gif'} onClick={this.handleClick}>gif 🤣</button>
-          <button how={100} background={'#2F3939'} value={'404'} onClick={this.handleClick}>404 💩</button>
-          <button how={20} background={'#2F3939'} value={'animals'} onClick={this.handleClick}>animals 🦋</button>
-          <button how={50} background={'#2F3939'} value={'space'} onClick={this.handleClick}>space 🚀</button>
-          <button how={50} background={'#2F3939'} value={'403'} onClick={this.handleClick}>403 🛑</button>
-          <button how={50} background={'#2F3939'} value={'500'} onClick={this.handleClick}>500 😯</button>
-          <button how={50} background={'#2F3939'} value={'503'} onClick={this.handleClick}>503 🤐</button>
-          <button how={50} background={'#2F3939'} value={'food'} onClick={this.handleClick}>food 🥕</button>
-          <button how={50} background={'#2F3939'} value={'tech'} onClick={this.handleClick}>tech 💻</button>
-          <button how={50} background={'#2F3939'} value={'autumn'} onClick={this.handleClick}>autumn 🍁</button>
-          <button how={50} background={'#2F3939'} value={'social'} onClick={this.handleClick}>social 🤳</button>
-          <button how={50} background={'#2F3939'} value={'react'} onClick={this.handleClick}>React 😍</button>
+
+          <button how={20} background={'#2F3939'} value={'school'} onClick={this.handleClick}>school </button>
+          <button how={50} background={'#2F3939'} value={'tech'} onClick={this.handleClick}>technologies</button>
+          <button how={100} background={'#2F3939'} value={'languages'} onClick={this.handleClick}>languages</button>
+        
+
         </div>
+
         <Sky
           images={modes[mode]}
           how={how}
-          size="100px"
-          time={30}
+          size="150px"
+          time={200}
           background={background}
         />
       </div>
