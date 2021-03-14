@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Sky from './components/sky/sky';
 import './App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { dog } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
