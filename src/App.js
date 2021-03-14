@@ -73,9 +73,6 @@ class App extends Component {
 
           <div className="resume">
             <button >
-            <FontAwesomeIcon icon="coffee"  />
-            
-
               <a style= {{textDecoration:'none', color: 'white'}} href="https://drive.google.com/file/d/137hOLVNOgLP3Ts13lZFWboXt2BTwM9Jd/view?usp=sharing" download="Zach Nasgowitz|Resume.pdf">
                 Download Resume
             </a>
