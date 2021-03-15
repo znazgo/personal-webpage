@@ -51,19 +51,21 @@ class App extends Component {
       },
       tech: {
         0: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png',
-        1: 'https://www.flaticon.com/svg/vstatic/svg/873/873117.svg?token=exp=1615692126~hmac=dd58304db9338fdc4f128960a14ffb46',
-        2: 'https://www.flaticon.com/svg/vstatic/svg/919/919825.svg?token=exp=1615692197~hmac=a7b765917077f32fe667c4a78e964251',
+        1: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png',
+        2: 'https://icon-library.com/images/platform-icon/platform-icon-7.jpg',
         3: 'https://symbols.getvecta.com/stencil_97/43_tensorflow-icon.f7092db2bd.svg',
-        4: 'https://pytorch.org/assets/images/pytorch-logo.png'
+        4: 'https://pytorch.org/assets/images/pytorch-logo.png',
+        5: 'https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png'
+
 
       },
 
       languages: {
-        0: 'https://www.flaticon.com/svg/vstatic/svg/888/888859.svg?token=exp=1615691951~hmac=1bb6b263c9407c6de12d2bbf61d944b9',
-        1: 'https://www.flaticon.com/svg/vstatic/svg/226/226777.svg?token=exp=1615690532~hmac=1c152629056c7e5e75e1cb8bc5e57b96',
-        2: 'https://www.flaticon.com/svg/vstatic/svg/1822/1822899.svg?token=exp=1615690980~hmac=3350cacc45e19a6dfb08df7f9e7b34de',
-        3: 'https://www.flaticon.com/svg/vstatic/svg/919/919828.svg?token=exp=1615691093~hmac=23c99f4f66b78c030164a1f99ef0f707',
-        //4: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'
+        0: 'https://www.jing.fm/clipimg/full/53-537670_python-png-file-python-logo-png.png',
+        1: 'https://freepikpsd.com/wp-content/uploads/2019/10/java-logo-transparent-png-5-Transparent-Images.png',
+        2: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png',
+        3: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png',
+        4: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'
       }
     }
     return (
