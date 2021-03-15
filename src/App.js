@@ -63,7 +63,7 @@ class App extends Component {
         1: 'https://www.flaticon.com/svg/vstatic/svg/226/226777.svg?token=exp=1615690532~hmac=1c152629056c7e5e75e1cb8bc5e57b96',
         2: 'https://www.flaticon.com/svg/vstatic/svg/1822/1822899.svg?token=exp=1615690980~hmac=3350cacc45e19a6dfb08df7f9e7b34de',
         3: 'https://www.flaticon.com/svg/vstatic/svg/919/919828.svg?token=exp=1615691093~hmac=23c99f4f66b78c030164a1f99ef0f707',
-        4: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'
+        //4: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'
       }
     }
     return (
